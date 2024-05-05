@@ -38,12 +38,12 @@ if (loading) {
         return (
             <div className={`bg-white p-4 rounded-lg text-sm flex ${className}`}>
                 <div className="w-1/2">
-                    <label htmlFor={label} className="text-black/40 mb-2 inline-block">
+                    <label htmlFor={label} className="text-black  mb-2 pr-20 ">
                         {label}
                     </label>
                     <input
                         id={label}
-                        className="outline-none w-full bg-transparent py-1.5"
+                        className="outline-none w-full bg-transparent py-1.5 text-black font-bold"
                         type="number"
                         placeholder="Amount"
                         disabled={amountDisable}
@@ -71,7 +71,7 @@ if (loading) {
     }
 
     function App() {
-        const [amount, setAmount] = useState()
+        const [amount, setAmount] = useState(0)
         const [from, setFrom] = useState("usd")
         const [to, setTo] = useState("inr")
         const [convertedAmount, setConvertedAmount] = useState(0)
