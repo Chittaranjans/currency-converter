@@ -1,29 +1,24 @@
 import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
 import './App.css'
-import {Routes , Route} from 'react-router-dom'
+import {BrowserRouter as Router, Routes , Route} from 'react-router-dom'
 import CurrecyConverter from './componets/CurrencyCoverter'
 import NavBar from './componets/NavBar'
+import FrontPage from './componets/FrontPage'
+import Footer from './componets/Footer'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      
+    <Router>
       <NavBar />
-      <CurrecyConverter />
-
-      {/* <Routes>
-      
+      <FrontPage />
+      <Footer />
+      <Routes>
           <Route path="/Currency-converter" element={<CurrecyConverter />} />
-{/* 
-           <Route path="/signin" element={<SignupForm />} /> */}
-    
-         {/* </Routes>  */}
-        {/* */} 
-    </>
+        {/* <Route path="/signin" element={<SignupForm />} />  */}
+      </Routes> 
+    </Router>
   )
 }
 
