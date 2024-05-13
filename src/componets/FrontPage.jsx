@@ -1,14 +1,22 @@
 import React from 'react'
+import { useState } from 'react'
+
+
+
+
 
 function FrontPage() {
-  return (
+    return (
+      
+
+        
     <div className= "bg-cover bg-center absolute inset-0 flex flex-col justify-center items-center  ">
           <img src="/public/pexels-pixabay-164527.jpg" alt="cover" className='w-full absolute top-0 left-0 h-1/2 object-cover object-center border rounded-md      ' />
+       <div className='p-5 text-cyan-900  text-center font-extrabold justify-center flex absolute inset-0 mt-20 font-DancingScript gap-3 '>
+          <h1>An affordable , rapid method for International </h1>
+              <h1 >money transfers currency</h1>
+        </div>
           
-          <p className='text-white text-left bg-transparent mt-20 absolute inset-0 flex flex-col '>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi eos illum ipsa quam, quia accusamus. Quod sed excepturi in reiciendis tempora sit praesentium sapiente, voluptates, velit iure libero, ex quisquam?</p>
-    
-      <h1 className='text-white text-left bg-transparent mt-20 absolute inset-0 flex flex-col pt-2'>hiiii</h1>  
       
       </div>
   )
